@@ -1,0 +1,12 @@
+.wheel { position: relative; width: min(100%, 560px); aspect-ratio: 1; margin-inline: auto; }
+.wheel-track { position: absolute; inset: 6%; border: 1px solid var(--line); border-radius: 50%; }
+.wheel-letter { position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); width: clamp(31px, 7.4%, 45px); aspect-ratio: 1; border: 1px solid #555; border-radius: 50%; display: grid; place-items: center; background: #363636; color: var(--text); font-family: "Unbounded", sans-serif; font-size: clamp(.62rem, 1.5vw, .82rem); font-weight: 650; padding: 0; transition: background .18s, border-color .18s, box-shadow .18s; }
+.wheel-letter:hover:not(:disabled) { border-color: var(--accent); }
+.wheel-letter.selected { background: var(--accent); border-color: var(--accent); color: var(--bg); box-shadow: 0 0 0 4px #fe6b3522; }
+.wheel-letter.correct { background: #285842; border-color: var(--success); color: #e6fff0; }
+.wheel-letter.wrong { background: #633535; border-color: var(--danger); color: #fff1f1; }
+.wheel-letter.passed:not(.selected) { border-color: var(--accent); color: var(--accent); }
+.wheel-letter:disabled { opacity: 1; }
+.wheel-center { position: absolute; inset: 25%; display: flex; justify-content: center; align-items: center; flex-direction: column; font: 750 clamp(1rem, 3vw, 2rem)/1.5 "Unbounded", sans-serif; letter-spacing: -.065em; }
+.wheel-center .accent { color: var(--accent); }
+@media (max-width: 430px) { .wheel-letter { width: 8%; font-size: .56rem; } .wheel-center { font-size: clamp(1rem, 5vw, 1.35rem); } }

@@ -1,0 +1,11 @@
+.site-header { height: 80px; border-bottom: 1px solid var(--line); background: var(--bg); position: relative; z-index: 5; }
+.header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+.brand { display: flex; align-items: center; gap: 12px; font-size: .92rem; font-weight: 750; letter-spacing: -.05em; white-space: nowrap; }
+.brand-symbol { display: grid; place-items: center; position: relative; width: 37px; height: 37px; border: 2px solid var(--accent); color: var(--accent); border-radius: 50%; font-size: 1.15rem; }
+.brand-symbol span { position: absolute; right: 3px; bottom: 4px; }
+.header-nav { display: flex; align-items: center; gap: 28px; }
+.nav-link { color: var(--muted); font-size: .92rem; transition: color .2s; }
+.nav-link:hover, .nav-link.active { color: var(--text); }
+.nav-profile { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; }
+.nav-profile.active { border-color: var(--accent); }
+@media (max-width: 600px) { .site-header { height: 68px; } .brand { font-size: .7rem; gap: 7px; } .brand-symbol { width: 30px; height: 30px; font-size: .92rem; } .header-nav { gap: 12px; } .nav-link { font-size: .78rem; } .nav-profile { padding: 9px 10px; } .nav-profile span { display: none; } }

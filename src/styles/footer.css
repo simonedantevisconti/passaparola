@@ -1,0 +1,8 @@
+.site-footer { margin-top: 85px; border-top: 1px solid var(--line); padding: 27px 0; }
+.footer-inner { display: flex; gap: 16px; justify-content: space-between; align-items: center; }
+.footer-brand { font-size: .77rem; font-weight: 750; }
+.footer-brand span { color: var(--accent); }
+.footer-inner p, .footer-inner small { margin: 0; color: var(--muted); font-size: .81rem; }
+.footer-inner p a { color: var(--text); }
+.footer-inner p a:hover { color: var(--accent); }
+@media (max-width: 700px) { .site-footer { margin-top: 50px; } .footer-inner { flex-direction: column; text-align: center; } }

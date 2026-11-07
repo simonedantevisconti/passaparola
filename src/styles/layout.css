@@ -1,0 +1,2 @@
+.site-layout { min-height: 100dvh; display: flex; flex-direction: column; }
+.site-main { width: 100%; flex: 1; }

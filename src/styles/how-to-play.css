@@ -1,0 +1,7 @@
+.rules-page .steps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 30px 0; }
+.rule-step { padding: 28px; border: 1px solid var(--line); background: var(--surface); border-radius: 14px; }
+.rule-step > span { color: var(--accent); font: 700 1.3rem "Unbounded", sans-serif; }
+.rule-step h2 { font-size: 1.1rem; margin-top: 25px; }
+.rule-step p { color: var(--muted); line-height: 1.7; font-size: .92rem; margin: 0; }
+.orange-dot { color: var(--accent); }
+@media (max-width: 620px) { .rules-page .steps-grid { grid-template-columns: 1fr; } }

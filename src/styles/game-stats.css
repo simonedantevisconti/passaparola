@@ -1,0 +1,7 @@
+.game-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.stat-card { background: var(--surface); padding: 16px; border: 1px solid var(--line); border-radius: 10px; }
+.stat-card span { display: block; color: var(--muted); font-size: .75rem; margin-bottom: 7px; }
+.stat-card strong { font-family: "Unbounded", sans-serif; font-size: 1.35rem; }
+.time-card strong { color: var(--accent); }
+.time-low strong { color: var(--danger); }
+@media (max-width: 440px) { .game-stats { gap: 7px; } .stat-card { padding: 11px 8px; } .stat-card span { font-size: .65rem; } .stat-card strong { font-size: 1rem; } }

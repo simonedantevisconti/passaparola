@@ -1,0 +1,1 @@
+.not-found-page { text-align: center; padding: 130px 0; }.not-found-page h1 { font-size: clamp(1.8rem, 5vw, 3rem); }.not-found-page h1 span { color: var(--accent); }.not-found-page > p:not(.eyebrow) { color: var(--muted); margin: 25px 0; }
